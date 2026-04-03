@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monthly Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 contenteditable="true">Monthly Budget Tracker</h1>
+
+<div class="topBar">
+Name: <input id="name" class="small">
+Monthly Income: <input id="income" class="small">
+
+<select id="monthSelect"></select>
+<button onclick="newMonth()">New Month</button>
+
+<a href="https://0517003000-cpu.github.io/Monthly-Budget-Calc/" target="_blank">
+Budget Calculator
+</a>
+</div>
+
+<div class="tables">
+
+<!-- ESSENTIAL -->
+<table>
+<tr><th colspan="2" contenteditable="true">Essential Expenses</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="essentialBudget" placeholder="Type here..."></td>
+</tr>
+
+<tr><td contenteditable="true">Expense</td><td>Cost</td></tr>
+
+<tr><td contenteditable></td><td><input class="essential"></td></tr>
+<tr><td contenteditable></td><td><input class="essential"></td></tr>
+<tr><td contenteditable></td><td><input class="essential"></td></tr>
+<tr><td contenteditable></td><td><input class="essential"></td></tr>
+<tr><td contenteditable></td><td><input class="essential"></td></tr>
+
+<tr><td>Total</td><td id="essentialTotal">0</td></tr>
+<tr><td>Status</td><td id="essentialStatus">-</td></tr>
+</table>
+
+<!-- NON ESSENTIAL -->
+<table>
+<tr><th colspan="2" contenteditable="true">Non Essential Expenses</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="nonBudget" placeholder="Type here..."></td>
+</tr>
+
+<tr><td contenteditable="true">Expense</td><td>Cost</td></tr>
+
+<tr><td contenteditable></td><td><input class="non"></td></tr>
+<tr><td contenteditable></td><td><input class="non"></td></tr>
+<tr><td contenteditable></td><td><input class="non"></td></tr>
+<tr><td contenteditable></td><td><input class="non"></td></tr>
+<tr><td contenteditable></td><td><input class="non"></td></tr>
+
+<tr><td>Total</td><td id="nonTotal">0</td></tr>
+<tr><td>Status</td><td id="nonStatus">-</td></tr>
+</table>
+
+<!-- SAVINGS -->
+<table>
+<tr><th colspan="2" contenteditable="true">Savings</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="saveBudget" placeholder="Type here..."></td>
+</tr>
+
+<tr><td contenteditable="true">Saving Type</td><td>Amount</td></tr>
+
+<tr><td contenteditable></td><td><input class="save"></td></tr>
+<tr><td contenteditable></td><td><input class="save"></td></tr>
+<tr><td contenteditable></td><td><input class="save"></td></tr>
+<tr><td contenteditable></td><td><input class="save"></td></tr>
+<tr><td contenteditable></td><td><input class="save"></td></tr>
+
+<tr><td>Total</td><td id="saveTotal">0</td></tr>
+<!-- ✅ STATUS REMOVED -->
+</table>
+
+</div>
+
+<div class="adviceBox">
+<h2>Budget Advice</h2>
+<div id="advice"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
