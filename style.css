@@ -1,0 +1,53 @@
+body{
+font-family:Arial;
+background:#f4f4f4;
+text-align:center;
+}
+
+.topBar{
+margin:20px;
+}
+
+.small{
+width:120px;
+}
+
+.tables{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+table{
+border-collapse:collapse;
+background:white;
+width:300px;
+}
+
+th{
+background:black;
+color:white;
+padding:10px;
+}
+
+td{
+border:1px solid #aaa;
+padding:8px;
+}
+
+input{
+border:none;
+border-bottom:1px solid black;
+width:90%;
+text-align:center;
+}
+
+.adviceBox{
+margin:40px auto;
+padding:30px;
+width:700px;
+border:3px solid black;
+background:white;
+text-align:left;
+}
